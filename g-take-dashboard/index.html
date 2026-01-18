@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Take Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="logo">
+            <span><i class="ph-fill ph-pinterest-logo"></i></span> G.take
+        </div>
+
+        <div class="nav-links">
+            <a href="#" class="nav-item active">
+                <i class="ph-fill ph-house"></i> Dashboard
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph-fill ph-check-circle"></i> Tasks
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph-fill ph-envelope-simple"></i> Messages
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph-fill ph-chart-bar"></i> Activity
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph-fill ph-calendar-blank"></i> Calendar
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph-fill ph-dots-three-circle"></i> Options
+            </a>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="#" class="nav-item">
+                <i class="ph-fill ph-gear"></i> Settings
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph-fill ph-sign-out"></i> Log out
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        
+        <!-- HEADER -->
+        <header>
+            <div class="breadcrumbs">
+                <i class="ph-fill ph-house"></i> Home 
+                <span>/</span> 
+                <i class="ph-fill ph-squares-four"></i> Dashboard
+                <span>/</span>
+                <i class="ph-fill ph-calendar"></i> 20 Sep
+                <i class="ph-bold ph-caret-down"></i>
+            </div>
+
+            <div class="user-actions">
+                <div class="profile-group">
+                    <div class="user-avatars">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="User 1">
+                        <img src="https://i.pravatar.cc/100?img=2" alt="User 2">
+                        <img src="https://i.pravatar.cc/100?img=3" alt="User 3">
+                        <div class="add-btn"><i class="ph-bold ph-plus"></i></div>
+                    </div>
+                    <span style="font-size: 14px; color: var(--text-grey);">Add member</span>
+                </div>
+                
+                <button class="icon-btn"><i class="ph-bold ph-magnifying-glass"></i></button>
+                <button class="icon-btn"><i class="ph-bold ph-bell"></i></button>
+                <img src="https://i.pravatar.cc/100?img=12" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+            </div>
+        </header>
+
+        <!-- DASHBOARD GRID -->
+        <div class="dashboard-grid">
+            
+            <!-- Hero Text -->
+            <div class="hero-section">
+                <div style="display: flex; justify-content: space-between; align-items: end;">
+                    <div>
+                        <h1 class="hero-title">Make Things Simple !</h1>
+                        <p class="hero-subtitle">Management and planning in a simple and attractive style will<br>bring you success</p>
+                        
+                        <div class="filters-bar">
+                            <div class="filter-group">
+                                <button class="filter-btn active"><div class="filter-dot"></div> To do <i class="ph-bold ph-caret-down"></i></button>
+                                <button class="filter-btn">Work <i class="ph-bold ph-caret-down"></i></button>
+                                <button class="filter-btn">High priority <i class="ph-bold ph-caret-down"></i></button>
+                                <button class="filter-btn" style="padding: 8px;"><i class="ph-bold ph-sliders-horizontal"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary">New task</button>
+                </div>
+            </div>
+
+            <!-- Col 1: Tasks -->
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+                
+                <!-- Task Card 1 -->
+                <div class="glass-panel card task-card">
+                    <div class="card-header">
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #3B66F5;"></div>
+                            <span style="font-size: 12px; color: #3B66F5;">Today</span>
+                        </div>
+                        <div style="display: flex; gap: 12px; color: var(--text-grey);">
+                            <i class="ph-bold ph-link"></i>
+                            <i class="ph-bold ph-dots-three"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-title">Meeting with pela members</div>
+                        <div class="card-subtitle">Description : meeting to review the new website design with updated features ...</div>
+                    </div>
+                    <div class="task-meta">
+                        <div class="time-badge"><i class="ph-fill ph-clock"></i> 08:00 Am 10:00 Am</div>
+                        <div class="user-avatars">
+                            <img src="https://i.pravatar.cc/100?img=5">
+                            <img src="https://i.pravatar.cc/100?img=6">
+                            <img src="https://i.pravatar.cc/100?img=7">
+                            <span style="margin-left:8px; font-size:12px; align-self:center; color: var(--text-muted);">+4 People</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Card 2 (Highlighted) -->
+                <div class="glass-panel card task-card active-glow" style="background: linear-gradient(180deg, rgba(30,32,50,0.7) 0%, rgba(59,102,245,0.15) 100%); border-color: rgba(59,102,245,0.3);">
+                    <div class="card-header">
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #3B66F5;"></div>
+                            <span style="font-size: 12px; color: #3B66F5;">Today</span>
+                        </div>
+                        <div style="display: flex; gap: 12px; color: var(--text-grey);">
+                            <div style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 12px; display: flex; align-items: center; gap: 4px;"><i class="ph-bold ph-folder"></i> 6 Files</div>
+                            <i class="ph-bold ph-bell"></i>
+                            <i class="ph-bold ph-dots-three"></i>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 16px;">
+                        <div style="width: 48px; height: 48px; bg-color: red; border-radius: 12px; background: white; display: flex; align-items: center; justify-content: center;">
+                            <i class="ph-fill ph-chart-pie-slice" style="font-size: 28px; color: #3B66F5;"></i>
+                        </div>
+                        <div>
+                            <div class="card-title">Design System</div>
+                            <div class="card-subtitle" style="margin-bottom: 8px;">Description : create a responsive design system for landing pages...</div>
+                        </div>
+                    </div>
+                   
+                    <div class="task-meta">
+                         <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+                             <span style="font-size: 10px; padding: 4px 8px; background: rgba(59,102,245,0.2); border-radius: 20px; color: #8ba5ff;">Design team</span>
+                             <span style="font-size: 10px; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 20px;">Development Team</span>
+                         </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                        <div class="time-badge"><i class="ph-fill ph-clock"></i> 08:00 Pm</div>
+                        <div class="progress-bar-container">
+                            Progress : <span style="background: #fff; color: #000; padding: 0 4px; border-radius: 4px; font-weight: bold;">%70</span>
+                            <div class="progress-track"><div class="progress-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Task Card 3 -->
+                 <div class="glass-panel card task-card">
+                    <div class="card-header">
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #4ADE80;"></div>
+                            <span style="font-size: 12px; color: #4ADE80;">Today</span>
+                        </div>
+                         <div style="display: flex; gap: 12px; color: var(--text-grey);">
+                            <i class="ph-bold ph-bell"></i>
+                            <i class="ph-bold ph-folder"></i>
+                            <i class="ph-bold ph-dots-three"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">Meeting With The Sales Team</div>
+                    <div class="card-subtitle">Description : checking the sales of the month and estimating costs...</div>
+                    <div class="task-meta">
+                        <div class="time-badge"><i class="ph-fill ph-clock"></i> 11:00 Am 02:00 Am</div>
+                        <div class="user-avatars">
+                             <img src="https://i.pravatar.cc/100?img=15">
+                             <img src="https://i.pravatar.cc/100?img=16">
+                            <span style="margin-left:8px; font-size:12px; align-self:center; color: var(--text-muted);">+2 People</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Col 2: Widgets -->
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+                
+                <!-- Note Widget -->
+                <div class="glass-panel card card-note" style="border: none; overflow: hidden; position: relative;">
+                    <!-- Blur overlays to simulate the gradient mesh look -->
+                    <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: #3B66F5; filter: blur(60px); opacity: 0.4;"></div>
+                    
+                    <div class="card-header">
+                        <div class="card-title">Today note</div>
+                        <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;"><i class="ph-fill ph-pencil-simple"></i></div>
+                    </div>
+                    <div style="border-left: 2px solid #3B66F5; padding-left: 12px; margin-bottom: 20px;">
+                        <p style="font-size: 13px; color: var(--text-grey); margin-bottom: 6px;">Going to the company and <span style="color: white; font-weight: 600;">planning meetings</span></p>
+                        <p style="font-size: 13px; color: var(--text-grey);">for the week ahead 🏀</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                         <div style="font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 6px;"><i class="ph-fill ph-bell-simple"></i> 20min ago</div>
+                         <button style="background: rgba(255,255,255,0.1); border: none; padding: 6px 16px; border-radius: 20px; color: white; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                             <i class="ph-fill ph-check"></i> I'm going
+                         </button>
+                    </div>
+                </div>
+
+                <!-- Files Widget -->
+                <div class="glass-panel card">
+                    <div class="card-header">
+                        <div class="card-title">My files</div>
+                        <i class="ph-bold ph-dots-three"></i>
+                    </div>
+                    
+                    <div class="file-upload-area">
+                        <div style="width: 48px; height: 48px; background: #131420; border-radius: 12px; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--primary-blue);">
+                            <div style="width: 20px; height: 2px; background: var(--primary-blue);"></div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--text-grey);">You have not added a file yet</div>
+                    </div>
+
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">More than 20 formats :</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="file-icons">
+                            <div class="file-icon"><i class="ph-fill ph-microsoft-word-logo" style="color: #2b579a;"></i></div>
+                            <div class="file-icon"><i class="ph-fill ph-figma-logo" style="color: #f24e1e;"></i></div>
+                            <div class="file-icon"><i class="ph-fill ph-file-pdf" style="color: grey;"></i></div>
+                        </div>
+                        <button class="btn-primary" style="padding: 8px 16px; font-size: 12px;"><i class="ph-bold ph-plus"></i> Add file</button>
+                    </div>
+                </div>
+
+                <!-- Activity Widget -->
+                <div class="glass-panel card">
+                    <div class="card-header">
+                         <div>
+                            <div class="card-title">Activity</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">13 Tasks Completed 👏</div>
+                         </div>
+                         <button class="card-title" style="background: rgba(255,255,255,0.05); border: none; border-radius: 20px; padding: 6px 12px; font-size: 12px; color: white; display: flex; align-items: center; gap: 4px;">
+                             Get the report <i class="ph-bold ph-arrow-up-right" style="background: #3B66F5; padding: 2px; border-radius: 50%;"></i>
+                        </button>
+                    </div>
+                    <div style="display: flex; justify-content: center; margin-bottom: -10px;">
+                        <span style="font-size: 10px; background: #3B66F5; padding: 2px 6px; border-radius: 8px;">80%</span>
+                    </div>
+                    <div class="graph-placeholder"></div>
+                    <div style="display: flex; justify-content: space-between; font-size: 10px; color: var(--text-muted); margin-top: 8px;">
+                        <span>Jan</span><span>Feb</span><span>Mar</span><span style="color: white; font-weight: bold;">Apr</span><span>May</span><span>Jun</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
